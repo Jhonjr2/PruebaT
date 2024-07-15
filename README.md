@@ -1,5 +1,7 @@
 PRUEBA ANALISTA DE DESARROLLO
+
 Descripción del Proyecto
+
 El proyecto consiste en desarrollar un aplicativo web utilizando JSF, JEE, Maven y desplegado en el servidor de aplicaciones WildFly. El objetivo es permitir al usuario ingresar un texto con un formato específico, procesarlo y generar un texto de salida según ciertas reglas predefinidas.
 
 Funcionalidad del Aplicativo
