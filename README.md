@@ -39,5 +39,6 @@ Maven: Herramienta de gestión de proyectos utilizada para la construcción y de
 WildFly: Servidor de aplicaciones utilizado para el despliegue y ejecución del aplicativo.
 
 
-Entrega
+Entrega:
+
 El aplicativo está empaquetado como un archivo .war que puede ser desplegado en un servidor WildFly. Las fuentes del proyecto junto con el archivo .war están disponibles en este repositorio.
