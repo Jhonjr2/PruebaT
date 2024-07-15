@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<head>
+    <title>Prueba Técnica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .form-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-button:hover {
+            background-color: #45a049;
+        }
+
+        .result-table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        .result-table th, .result-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .result-table th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h3>Texto de Entrada:</h3>
+    <h:form>
+        <h:inputText id="inputText" value="#{textoController.textoEntrada}" rows="10" cols="50" styleClass="form-input" />
+        <br/>
+        <h:commandButton value="Generar Texto de Salida" action="#{textoController.generarTextoSalida}" styleClass="form-button" />
+    </h:form>
+
+    <h3>Texto de Salida:</h3>
+    <h:dataTable value="#{textoController.textoSalidaList}" var="resultado" rendered="#{not empty textoController.textoSalidaList}" styleClass="result-table">
+        <h:column>#{resultado}</h:column>
+    </h:dataTable>
+</div>
+</body>
+</html>
