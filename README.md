@@ -9,8 +9,10 @@ Funcionalidad del Aplicativo
 
 El usuario puede ingresar líneas de texto, cada una formada por un número seguido de una frase separados por el carácter \.
 Ejemplo de formato de entrada:
+
 3\the force is strong in this one
 7\take what you can, give nothing back
+
 ![Captura de Pantalla 2024-07-15 a la(s) 5 22 42 p  m](https://github.com/user-attachments/assets/b35517a9-6638-49bc-8bdb-79ca5e3fa599)
 
 
@@ -21,6 +23,7 @@ El segundo dato del texto de entrada, limpiado de caracteres que no sean letras 
 Un valor booleano (true o false) que indica si el número en la primera columna corresponde al número de palabras en la frase.
 
 Ejemplo de formato de salida:
+
 the force is strong in this one\false
 take what you can give nothing back\true
 
