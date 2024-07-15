@@ -38,6 +38,10 @@ JavaServer Faces (JSF): Framework utilizado para el desarrollo de la interfaz de
 Maven: Herramienta de gestión de proyectos utilizada para la construcción y dependencias del proyecto.
 WildFly: Servidor de aplicaciones utilizado para el despliegue y ejecución del aplicativo.
 
+Despliegue en Wildfly 22
+
+![image](https://github.com/user-attachments/assets/1060f8c6-e187-43f8-9ed1-76e92ad12463)
+
 
 Entrega:
 
